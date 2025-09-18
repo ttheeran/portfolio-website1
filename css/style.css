@@ -1,0 +1,80 @@
+/*
+Colors used:
+Primary Background Color (Dark Gray): #111827;
+Secondary Color (White): #FFFFFF;
+Global Accent Color (Cyan): 06B6D4;
+Font: Poppins;
+*/
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px; /*sets font size to 16px*/
+  font-weight: 400; /*sets font weight to 400*/
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  background-color: #111827;
+  color: #FFFFFF;
+}body
+
+h1, h2, h3 {
+    line-height: 1.6
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2.25em;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.75em;
+    font-weight: 400;
+}
+
+img {
+    width: 100%
+}
+
+a{
+    color:#FFFFFF;
+    text-decoration: none; /*no underline */
+}
+a:hover{
+    color:aqua;
+    text-decoration: underline; /*no underline*/
+}
+
+a:active{
+    color:aqua;
+}
+
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #06B6D4;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #2a5784; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #06B6D4;
+  text-transform: uppercase;
+  border: 2px solid #06B6D4;
+}
+
+.button.contact:hover {
+  background-color: #204492;
+  color: #ffffff;
+}
