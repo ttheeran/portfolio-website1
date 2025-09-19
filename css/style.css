@@ -115,6 +115,13 @@ main {
   transition: 0.2s opacity;
 }
 
+.icon {
+    width: 32px;
+    height: 32px;
+    fill: #ffffff;
+    text-align: center;
+}
+
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
