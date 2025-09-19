@@ -5,6 +5,17 @@ Secondary Color (White): #FFFFFF;
 Global Accent Color (Cyan): 06B6D4;
 Font: Poppins;
 */
+header {
+    background-color:#131b2c;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    margin: 10px;
+    margin: 0 auto;
+    border-bottom: 3px solid #06B6D4;
+    text-align: center;
+}
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -49,6 +60,48 @@ a:hover{
 
 a:active{
     color:aqua;
+}
+
+.container {
+    padding: 0 15px;
+}
+
+.row {
+    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #06B6D4; }
+
+.hero h1 {
+    text-align: center; /* Centers text */
+    margin: 0;
+    padding: 0.67em 0;
+}
+
+.logo {
+    max-width: 250px;
+   
+}
+
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav > ul > li {
+    display: inline-block;
+    
+}
+
+nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+main {
+    padding-top: 133px;
 }
 
 .button {
