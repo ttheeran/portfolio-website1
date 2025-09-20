@@ -70,9 +70,15 @@ a:active{
     margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
-#work .row { padding-bottom: 25px; border-bottom: 1px solid #06B6D4; }
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #f1f7f8; }
 
-.hero h1 {
+#hero h1 {
+    text-align: center; /* Centers text */
+    margin: 0;
+    padding: 0.67em 0;
+}
+
+#hero p {
     text-align: center; /* Centers text */
     margin: 0;
     padding: 0.67em 0;
