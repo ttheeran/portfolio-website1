@@ -5,8 +5,10 @@ Secondary Color (White): #FFFFFF;
 Global Accent Color (Cyan): 06B6D4;
 Font: Poppins;
 */
-::before,
-::after { box-sizing: border-box; }
+*::before,
+*::after { 
+    box-sizing: border-box; 
+}
 
 header {
     background-color:#131b2c;
@@ -18,6 +20,7 @@ header {
     margin: 0 auto;
     border-bottom: 3px solid #06B6D4;
     text-align: unset;
+    overflow: hidden;
 }
 
 body {
@@ -28,6 +31,13 @@ body {
   background-color: #111827;
   color: #FFFFFF;
 }
+
+#work h2 {
+    text-align: center;
+    margin-top: 0;        /* Remove top margin to bring it up */
+    margin-bottom: 40px;  /* Keep some space below */
+}
+
 
 /* sticky footer helpers */
 /*html, body { height: 100%; }
@@ -55,7 +65,8 @@ h3 {
 }
 
 img {
-    width: 100%
+    display: block;
+    width: 100%;
 }
 
 a{
@@ -81,9 +92,7 @@ a:active{
 
 #work .row { padding-bottom: 25px; border-bottom: 1px solid #f1f7f8; }
 
-#hero span {
-    display: block;
-}
+
 
 #hero h1 {
     text-align: center; /* Centers text */
@@ -100,6 +109,8 @@ a:active{
 .logo {
     max-width: 100px;
     padding: 5px;
+    float: left;
+    margin-left: 20px; 
    
 }
 
@@ -107,6 +118,7 @@ a:active{
 nav > ul {
     list-style-type: none;
     padding: 0;
+    margin-right: 20px;
 }
 
 nav > ul > li {
@@ -129,9 +141,31 @@ main {
     width: 50px;
     height: 50px;
     fill: #ffffff;
-    text-align: center;
+    margin: 0 2px;
+    display: inline-block;
 }
 
+footer {
+    text-align: center;
+    padding: 40px 0;
+}
+
+footer h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer p{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.social-icons {
+    display: block;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
@@ -170,6 +204,10 @@ main {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+    #hero span {
+    display: block;
+    }
+    
     header {
         text-align: unset;
         padding: 20px 0 13px;
@@ -181,9 +219,32 @@ Medium devices (640px and larger)
         margin-top: 4px;
     }
 
-    .col-md-6 { width: 50%; }
-    [class*="col-"] { float: left; padding: 10px; }
-    .row::after { content:""; display: table; clear: both; }
+    .col-md-6 { 
+        width: 50%; 
+    }
+
+    [class*="col-"],
+    .column[class*="col-"] { 
+        float: left; 
+        padding: 10px; 
+        box-sizing: border-box;
+        vertical-align: top;
+    }
+
+    /* Remove default margins from headings and paragraphs in columns */
+    [class*="col-"] h3 {
+    margin-top: 0;
+    }
+
+    [class*="col-"] p {
+    margin-top: 0;
+    }
+
+    .row::after { 
+        content:""; 
+        display: table; 
+        clear: both; 
+    }
 
    
 }
