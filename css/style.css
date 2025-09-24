@@ -38,6 +38,19 @@ body {
     margin-bottom: 40px;  /* Keep some space below */
 }
 
+.project-title h1 {
+    text-align: center;
+    margin-top: 0;        /* Remove top margin to bring it up */
+    margin-bottom: 40px;  /* Keep some space below */
+    margin-top: 80px;
+}
+
+.about-me h1 {
+    text-align: center;
+    margin-top: 0;        /* Remove top margin to bring it up */
+    margin-bottom: 40px;  /* Keep some space below */
+    margin-top: 80px;
+}
 
 /* sticky footer helpers */
 /*html, body { height: 100%; }
