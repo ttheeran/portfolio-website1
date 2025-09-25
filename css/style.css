@@ -32,6 +32,11 @@ body {
   color: #FFFFFF;
 }
 
+body main {
+    padding-top: 40px;
+}
+
+
 #work h2 {
     text-align: center;
     margin-top: 0;        /* Remove top margin to bring it up */
@@ -180,6 +185,68 @@ footer p{
     margin-bottom: 10px;
 }
 
+.social-icons a {
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+.social-icons a:hover {
+    text-decoration: none;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+/* Control the photo size on about page */
+[class*="col-"] {
+    vertical-align: top;
+}
+
+
+main picture img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: adds rounded corners */
+    margin-top: 0;
+}
+
+[class*="col-"] > *:first-child {
+    margin-top: 0;
+}
+
+/* Add some spacing between the two main sections */
+.row + .row {
+    margin-top: 60px;
+}
+
+/* Style the lists in skills and tools sections */
+main ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+main ul li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+/* Ensure Skills and Tools are equal width */
+.col-lg-6 { 
+    width: 50%; 
+}
+
+/* Mobile responsive adjustments */
+@media only screen and (max-width: 639px) {
+    .row + .row {
+        margin-top: 40px;
+    }
+    
+    main picture {
+        margin-bottom: 30px;
+    }
+}
 
 .button {
   transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
@@ -194,7 +261,7 @@ footer p{
   
 }
 
-.berlin-illustration {
+/*.berlin-illustration {
     width: 100%;
     max-width: 100%;
     height: auto;
@@ -234,7 +301,7 @@ footer p{
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
-}
+}*/
 
 
 
