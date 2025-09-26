@@ -56,4 +56,24 @@ $(document).ready(function() {
       navToggle.className = 'navtoggle';
     }
   });
+
+  // Scroll to Top Button Functionality - MOVED INSIDE $(document).ready()
+  const scrollToTopBtn = $('#scrollToTop');
+  
+  // Show/hide button based on scroll position
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      scrollToTopBtn.addClass('visible');
+    } else {
+      scrollToTopBtn.removeClass('visible');
+    }
+  });
+  
+  // Smooth scroll to top when clicked
+  scrollToTopBtn.click(function(e) {
+    e.preventDefault();
+    $('html, body').animate({
+      scrollTop: 0
+    }, 800, 'swing');
+  });
 });
