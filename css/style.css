@@ -241,17 +241,6 @@ main ul li {
     width: 50%;
 }
 
-.navtoggle,
-.navtoggle.responsive {
-    position: relative;
-}
-
-.navtoggle li .icon {
-    position: absolute;
-    right: 0;
-    top: 2px;
-    font-size: 20px;
-}
 
 .button {
     transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
@@ -310,6 +299,32 @@ main ul li {
     margin-bottom: 0;
 }
 
+.navtoggle {
+    position: relative;
+    width: 100%;
+}
+
+.navtoggle nav {
+    float: right;
+    margin-top: 4px;
+}
+
+/* Hamburger menu icon positioning - FIXED */
+.navtoggle li:last-child {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 1000;
+}
+
+.navtoggle li .icon {
+    position: relative;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+    display: block;
+    padding: 10px;
+}
 /* Mobile responsive adjustments */
 
 @media only screen and (max-width: 639px) {
@@ -321,12 +336,28 @@ main ul li {
         margin-bottom: 30px;
     }
 
+    .logo {
+        float: left;
+        margin-left: 20px;
+        position: relative;
+        z-index: 998;
+
+    }
+    
     .navtoggle li:not(:last-child) {
         display: none;
     }
 
     .navtoggle li:last-child {
         display: block;
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        z-index: 1000;
+    }
+    
+    body.menu-open {
+        overflow: hidden;
     }
 
     .navtoggle.responsive li:not(:last-child) {
@@ -343,25 +374,30 @@ main ul li {
         width: 100%;
         float: none;
         margin: 0;
-        padding-top: 40px;
+        padding-top: 5px;
         clear: both;
     }
 
     .navtoggle.responsive li {
         display: block;
-        padding: 15px 0;
+        padding: 20px 0;
         margin: 0;
+        width: 100%;
     }
 
     /* First menu item styling */
     .navtoggle.responsive li:not(:last-child):first-child {
-        border-top: none;
-        margin-top: 20px;
+        border-top: 1px solid rgba(6, 182, 212, 0.3);
+        margin-top: 0px;
     }
+
+    
 
     .navtoggle.responsive li:last-child {
         padding: 0 0 10px;
     }
+
+        
 
     .navtoggle li .icon {
         position: absolute;
@@ -376,17 +412,21 @@ main ul li {
     top: 2px;
     font-size: 20px;
     }
-    /* Perfect X transformation */
+
+    
+
+    
+    /* Perfect X transformation - FIXED */
     .navtoggle.responsive .hamburger-lines span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
+    transform: translateY(6px) rotate(45deg);
     }
 
     .navtoggle.responsive .hamburger-lines span:nth-child(2) {
-        opacity: 0;
+    opacity: 0;
     }
 
     .navtoggle.responsive .hamburger-lines span:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px);
+    transform: translateY(-6px) rotate(-45deg);
     }
 }
 
