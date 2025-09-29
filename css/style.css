@@ -1,15 +1,55 @@
-/*
-Colors used:
-Primary Background Color (Dark Gray): #111827;
-Secondary Color (White): #FFFFFF;
-Global Accent Color (Cyan): 06B6D4;
-Font: Poppins;
-*/
+/* ============================================
+   PORTFOLIO WEBSITE STYLES
+   Designer: Troy Theeranuntawat
+   ============================================ */
+
+/* ============================================
+   COLOR PALETTE
+   ============================================
+   Primary Background (Dark Gray): #111827
+   Secondary (White): #FFFFFF
+   Global Accent (Cyan): #06B6D4
+   Header Background: #0d131f
+   Body Background: #070b16
+   Border Accent: #061b62
+   ============================================ */
+
+/* ============================================
+   FONT STACK
+   ============================================
+   Primary Font: 'Poppins', sans-serif
+   ============================================ */
+
+
+/* ============================================
+   GLOBAL RESET & BOX SIZING
+   ============================================ */
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
+
+/* ============================================
+   BODY STYLES
+   ============================================ */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    background-color: #070b16;
+    color: #FFFFFF;
+}
+
+body main {
+    padding-top: 40px;
+}
+
+
+/* ============================================
+   HEADER STYLES
+   ============================================ */
 header {
     background-color: #0d131f;
     padding-top: 10px;
@@ -23,52 +63,99 @@ header {
     overflow: hidden;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    /*sets font size to 16px*/
-    font-weight: 400;
-    /*sets font weight to 400*/
-    line-height: 1.6;
-    /* Sets the line-height to 1.6 * the font-size */
-    background-color: #070b16;
+
+/* ============================================
+   LOGO STYLES
+   ============================================ */
+.logo {
+    max-width: 100px;
+    padding: 5px;
+    float: left;
+    margin-left: 20px;
+}
+
+
+/* ============================================
+   NAVIGATION STYLES
+   ============================================ */
+nav>ul {
+    list-style-type: none;
+    padding: 0;
+    margin-right: 20px;
+}
+
+nav>ul>li>a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 600;
     color: #FFFFFF;
 }
 
-body main {
-    padding-top: 40px;
+
+/* ============================================
+   HAMBURGER MENU ICON
+   ============================================ */
+.hamburger-lines {
+    display: inline-block;
+    position: relative;
+    width: 24px;
+    height: 18px;
+    cursor: pointer;
 }
 
-#work h2 {
-    text-align: center;
-    margin-top: 0;
-    /* Remove top margin to bring it up */
-    margin-bottom: 40px;
-    /* Keep some space below */
+.hamburger-lines span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #ffffff;
+    margin-bottom: 3px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+    border-radius: 2px;
 }
 
-.project-title h1 {
-    text-align: center;
-    margin-top: 0;
-    /* Remove top margin to bring it up */
-    margin-bottom: 40px;
-    /* Keep some space below */
-    margin-top: 80px;
+.hamburger-lines span:last-child {
+    margin-bottom: 0;
 }
 
-.about-me h1 {
-    text-align: center;
-    margin-top: 0;
-    /* Remove top margin to bring it up */
-    margin-bottom: 40px;
-    /* Keep some space below */
-    margin-top: 80px;
+
+/* ============================================
+   MOBILE NAVIGATION TOGGLE
+   ============================================ */
+.navtoggle {
+    position: relative;
+    width: 100%;
 }
 
+.navtoggle nav {
+    float: right;
+    margin-top: 4px;
+}
+
+.navtoggle li:last-child {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1000;
+}
+
+.navtoggle li .icon {
+    position: relative;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+    display: block;
+    padding: 10px;
+}
+
+
+/* ============================================
+   TYPOGRAPHY - HEADINGS
+   ============================================ */
 h1,
 h2,
 h3 {
-    line-height: 1.6
+    line-height: 1.6;
 }
 
 h1 {
@@ -86,34 +173,67 @@ h3 {
     font-weight: 400;
 }
 
+
+/* ============================================
+   PAGE SECTION HEADINGS
+   ============================================ */
+#work h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.project-title h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+
+.about-me h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+
+
+/* ============================================
+   IMAGES
+   ============================================ */
 img {
     display: block;
     width: 100%;
 }
 
+
+/* ============================================
+   LINKS
+   ============================================ */
 a {
     color: #FFFFFF;
     text-decoration: none;
-    /*no underline */
 }
 
 a:hover {
     color: aqua;
     text-decoration: underline;
-    /*no underline*/
 }
 
 a:active {
     color: aqua;
 }
 
+
+/* ============================================
+   LAYOUT CONTAINERS
+   ============================================ */
 .container {
     padding: 0 15px;
 }
 
 .row {
     margin: 25px 0;
-    /* 25px top and bottom, 0 left and right */
 }
 
 #work .row {
@@ -121,110 +241,37 @@ a:active {
     border-bottom: 1px solid #f1f7f8;
 }
 
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
 #hero h1 {
     text-align: center;
-    /* Centers text */
     margin: 0;
     padding: 0.67em 0;
 }
 
 #hero p {
     text-align: center;
-    /* Centers text */
     margin: 0;
     padding: 0.67em 0;
 }
 
-.logo {
-    max-width: 100px;
-    padding: 5px;
-    float: left;
-    margin-left: 20px;
-}
 
-nav>ul {
-    list-style-type: none;
-    padding: 0;
-    margin-right: 20px;
-}
-
-nav>ul>li>a {
-    padding: 0 15px;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #FFFFFF;
-}
-
+/* ============================================
+   MAIN CONTENT AREA
+   ============================================ */
 main {
     padding-top: 133px;
-}
-
-.icon {
-    width: 50px;
-    height: 50px;
-    fill: #ffffff;
-    margin: 0 2px;
-    display: inline-block;
-}
-
-footer {
-    text-align: center;
-    padding: 40px 0;
-}
-
-footer h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-footer p {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.social-icons {
-    display: block;
-    text-align: center;
-    margin-top: 80px;
-    margin-bottom: 10px;
-}
-
-.social-icons a {
-    text-decoration: none;
-    outline: none;
-    border: none;
-}
-
-.social-icons a:hover {
-    text-decoration: none;
-    outline: none;
-    border: none;
-    background-color: transparent;
-}
-
-/* Control the photo size on about page */
-[class*="col-"] {
-    vertical-align: top;
 }
 
 main picture img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    /* Optional: adds rounded corners */
     margin-top: 0;
 }
 
-[class*="col-"]>*:first-child {
-    margin-top: 0;
-}
-
-/* Add some spacing between the two main sections */
-.row+.row {
-    margin-top: 60px;
-}
-
-/* Style the lists in skills and tools sections */
 main ul {
     list-style-type: disc;
     margin-left: 20px;
@@ -236,33 +283,51 @@ main ul li {
     line-height: 1.4;
 }
 
-/* Ensure Skills and Tools are equal width */
+
+/* ============================================
+   COLUMN SYSTEM
+   ============================================ */
+[class*="col-"] {
+    vertical-align: top;
+}
+
+[class*="col-"]>*:first-child {
+    margin-top: 0;
+}
+
+.row+.row {
+    margin-top: 60px;
+}
+
 .col-lg-6 {
     width: 50%;
 }
 
 
+/* ============================================
+   BUTTONS - BASE STYLES
+   ============================================ */
 .button {
     transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
     display: inline-block;
-    /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
     background-color: #06B6D4;
     color: #ffffff;
-    /* needed to override the default link color */
     font-weight: 400;
     padding: 10px;
     border-radius: 3px;
     border-bottom: 2px solid #2a5784;
-    /* width of the border, type, color */
     transition: 0.2s opacity;
 }
 
 .button:hover {
     opacity: 0.8;
-    /* Reduces the opacity of the button to 80% */
     text-decoration: none;
 }
 
+
+/* ============================================
+   BUTTONS - CONTACT BUTTON VARIANT
+   ============================================ */
 .button.contact {
     background: linear-gradient(135deg, rgba(6, 182, 212, 0.1) 0%, rgba(6, 182, 212, 0.05) 100%);
     border: 2px solid rgba(6, 182, 212, 0.3);
@@ -296,63 +361,60 @@ main ul li {
 }
 
 
+/* ============================================
+   FOOTER STYLES
+   ============================================ */
+footer {
+    text-align: center;
+    padding: 40px 0;
+}
+
+footer h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer p {
+    text-align: center;
+    margin-bottom: 30px;
+}
 
 
-/* CUSTOM HAMBURGER STYLES - GLOBAL */
-.hamburger-lines {
+/* ============================================
+   SOCIAL MEDIA ICONS
+   ============================================ */
+.icon {
+    width: 50px;
+    height: 50px;
+    fill: #ffffff;
+    margin: 0 2px;
     display: inline-block;
-    position: relative;
-    width: 24px;
-    height: 18px;
-    cursor: pointer;
 }
 
-.hamburger-lines span {
+.social-icons {
     display: block;
-    height: 3px;
-    width: 100%;
-    background-color: #ffffff;
-    margin-bottom: 3px;
-    transition: all 0.3s ease;
-    transform-origin: center;
-    border-radius: 2px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 10px;
 }
 
-.hamburger-lines span:last-child {
-    margin-bottom: 0;
+.social-icons a {
+    text-decoration: none;
+    outline: none;
+    border: none;
 }
 
-.navtoggle {
-    position: relative;
-    width: 100%;
-}
-
-.navtoggle nav {
-    float: right;
-    margin-top: 4px;
-}
-
-/* Hamburger menu icon positioning - FIXED */
-.navtoggle li:last-child {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    z-index: 1000;
-}
-
-.navtoggle li .icon {
-    position: relative;
-    right: 0;
-    top: 0;
-    font-size: 20px;
-    display: block;
-    padding: 10px;
+.social-icons a:hover {
+    text-decoration: none;
+    outline: none;
+    border: none;
+    background-color: transparent;
 }
 
 
-/* Add this CSS to your style.css file */
-
-/* Scroll to Top Button */
+/* ============================================
+   SCROLL TO TOP BUTTON
+   ============================================ */
 .scroll-to-top {
     position: fixed;
     bottom: 30px;
@@ -393,7 +455,6 @@ main ul li {
     transform: translateY(-1px);
 }
 
-/* Arrow icon using CSS */
 .scroll-to-top::before {
     content: '';
     width: 12px;
@@ -405,9 +466,27 @@ main ul li {
 }
 
 
-/* Mobile responsive adjustments */
+/* ============================================
+   KEYFRAME ANIMATIONS
+   ============================================ */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
+
+/* ============================================
+   MEDIA QUERIES - MOBILE (MAX 639PX)
+   ============================================ */
 @media only screen and (max-width: 639px) {
+    
+    /* Layout adjustments */
     .row+.row {
         margin-top: 40px;
     }
@@ -416,18 +495,20 @@ main ul li {
         margin-bottom: 30px;
     }
 
+    /* Logo positioning */
     .logo {
         float: left;
         margin-left: 20px;
         position: relative;
         z-index: 998;
-
     }
     
+    /* Hide navigation items by default */
     .navtoggle li:not(:last-child) {
         display: none;
     }
 
+    /* Show hamburger menu icon */
     .navtoggle li:last-child {
         display: block;
         position: absolute;
@@ -436,10 +517,12 @@ main ul li {
         z-index: 1000;
     }
     
+    /* Prevent body scroll when menu is open */
     body.menu-open {
         overflow: hidden;
     }
 
+    /* Show navigation items when menu is open */
     .navtoggle.responsive li:not(:last-child) {
         display: block;
         width: 100%;
@@ -471,13 +554,9 @@ main ul li {
         margin-top: 0px;
     }
 
-    
-
     .navtoggle.responsive li:last-child {
         padding: 0 0 10px;
     }
-
-        
 
     .navtoggle li .icon {
         position: absolute;
@@ -487,29 +566,27 @@ main ul li {
     }
     
     .navtoggle.responsive li .icon {
-    position: absolute;
-    right: 0;
-    top: 2px;
-    font-size: 20px;
+        position: absolute;
+        right: 0;
+        top: 2px;
+        font-size: 20px;
     }
 
-    
-
-    
-    /* Perfect X transformation - FIXED */
+    /* Hamburger to X transformation when menu is open */
     .navtoggle.responsive .hamburger-lines span:nth-child(1) {
-    transform: translateY(6px) rotate(45deg);
+        transform: translateY(6px) rotate(45deg);
     }
 
     .navtoggle.responsive .hamburger-lines span:nth-child(2) {
-    opacity: 0;
+        opacity: 0;
     }
 
     .navtoggle.responsive .hamburger-lines span:nth-child(3) {
-    transform: translateY(-6px) rotate(-45deg);
+        transform: translateY(-6px) rotate(-45deg);
     }
 
-     .scroll-to-top {
+    /* Scroll to top button mobile adjustments */
+    .scroll-to-top {
         bottom: 20px;
         right: 20px;
         width: 45px;
@@ -523,9 +600,10 @@ main ul li {
     }
 }
 
-/* ==============================
-Medium devices (640px and larger)
-================================= */
+
+/* ============================================
+   MEDIA QUERIES - TABLET (640PX AND LARGER)
+   ============================================ */
 @media only screen and (min-width: 640px) {
 
     /* Restore desktop layout */
@@ -551,6 +629,7 @@ Medium devices (640px and larger)
         padding: 20px 0 13px;
     }
 
+    /* Column system for tablet */
     .col-md-6 {
         width: 50%;
     }
@@ -571,12 +650,14 @@ Medium devices (640px and larger)
         margin-top: 0;
     }
 
+    /* Clearfix for columns */
     .row::after {
         content: "";
         display: table;
         clear: both;
     }
 
+    /* Desktop navigation - show all items inline */
     nav>ul>li {
         display: inline-block;
     }
@@ -585,21 +666,26 @@ Medium devices (640px and larger)
         display: inline-block;
     }
 
+    /* Hide hamburger menu on desktop */
     .navtoggle li:last-child {
         display: none;
     }
 }
 
-/* ==============================
-Large devices (1024px or larger)
-================================= */
+
+/* ============================================
+   MEDIA QUERIES - DESKTOP (1024PX AND LARGER)
+   ============================================ */
 @media only screen and (min-width: 1024px) {
+    
+    /* Max width container */
     .container {
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
     }
 
+    /* Desktop column widths */
     .col-lg-7 {
         width: 58.3333%;
     }
@@ -609,20 +695,10 @@ Large devices (1024px or larger)
     }
 }
 
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {}
 
-/* Keyframe animation for smooth slide down */
-@keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* ============================================
+   MEDIA QUERIES - LARGE DESKTOP (1440PX+)
+   ============================================ */
+@media only screen and (min-width: 1440px) {
+    /* Reserved for extra large screen adjustments */
 }
