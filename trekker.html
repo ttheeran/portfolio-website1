@@ -15,19 +15,16 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
     <!-- For the header -->
     <header>
-
         <div class="container">
             <div class="navtoggle" id="myNavtoggle">
                 <a href="index.html">
                     <img src="./img/troy logo.svg" alt="My Logo" class="logo">
                 </a>
-
                 <nav>
                     <ul>
                         <li><a href="index.html">Work</a></li>
@@ -48,79 +45,107 @@
 
     <!-- For the hero section -->
     <div>
-        <div class="about-me">
-            <h1>About Me</h1>
+        <div class="project-title">
+            <h1>Trekker Hiking App</h1>
         </div>
     </div>
 
     <!-- For your work/projects -->
 
     <main>
-        <section id="about">
-            <div class="container">
-                <!-- Photo and My Story Row -->
-                <div class="row">
-                    <div class="column col-md-6 col-lg-5">
+        <div class="main container">
+            <!-- Hero Image -->
+            <div class="hero-image">
+                <picture>
+                    <img src="./img/Project photos/trekker@2x.jpg" alt="Trekker App Hero">
+                </picture>
+            </div>
+
+            <!-- Content Section -->
+            <div class="project-content">
+                <div class="column1 overview">
+                    <section>
+                        <h2>Overview</h2>
+                        <p>Trekker is an outdoor hiking app designed to support users with planning, navigation, and oﬄine
+                            reliability on both iOS and Android platforms. It focuses on helping hikers feel prepared and
+                            confident whether connected or deep in the wilderness.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>The Challenge</h2>
+                        <p>Unlike many apps, Trekker had to function in environments with limited or no connectivity. The
+                            challenge was designing an interface that was reliable oﬄine while still feeling rich and
+                            interactive.</p>
+                    </section>
+
+                    <section>
+                        <h2>My Role & Process</h2>
+                        <ul>
+                            <li>Conducted research on hiking communities and reviewed competitor products to identify
+                                gaps (oﬄine features, safety prompts, progress tracking).</li>
+                            <li>Built user flows covering planning hikes, tracking progress, and accessing oﬄine maps.</li>
+                            <li>Prototyped wireframes and tested with users for clarity in low-light and outdoor settings.
+                            </li>
+                            <li>Designed final high-fidelity mockups focusing on large tap targets, simple navigation, and
+                                clear oﬄine indicators.</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>The Solution</h2>
+                        <p>Trekker provides oﬄine maps, milestone tracking, and a clean UI built for usability in outdoor
+                            conditions. The design prioritizes contrast, simplicity, and reliability, ensuring users feel
+                            supported in unpredictable environments.</p>
+                    </section>
+
+                    <section>
+                        <h2>Key Takeaway</h2>
+                        <p>This project demonstrated the importance of designing with context in mind. Trekker wasn’t just
+                            about delivering features — it was about ensuring the experience worked under the real-world
+                            conditions hikers face.</p>
+                    </section>
+
+                    <section>
+                        <h2>User Flow</h2>
                         <picture>
-                            <source media="(max-width:600px)" srcset="./img/me@2x.jpg">
-                            <img src="./img/me@2x.jpg" alt="Troy Theeranuntawat">
+                            <img src="./img/Trekker/flowchart@2x.jpg" alt="Trekker User Flow Diagram">
                         </picture>
-                    </div>
-                    <div class="column col-md-6 col-lg-7">
-                        <h2>My Story</h2>
-                        <p>I've spent the last 10+ years bridging creativity and technology—designing visuals for retail
-                            spaces, crafting graphics for film, supporting instructional designers, and experimenting
-                            with
-                            motion graphics. My career at Apple Retail sharpened my technical knowledge and people-first
-                            approach, teaching me how to guide users through complex problems with clarity and empathy.
-                            Now,
-                            I
-                            bring that same blend of design expertise and technical fluency into UX, creating digital
-                            products that are
-                            intuitive, beautiful, and built with real people in mind.</p>
+                    </section>
 
-                        <p>Outside of design, I'm passionate about staying active
-                            and inspired. I enjoy exploring the outdoors through
-                            hiking, keeping fit through regular training, and following
-                            the latest tech trends that shape how we live and work.
-                            I'm also an avid fan of film and cinema, always finding
-                            new ways to draw creative inspiration from storytelling on screen.</p>
-                        <a href="files/troy_resume2025.pdf" class="button">Download my Resume</a>
-                    </div>
-                </div>
+                    <section>
+                        <h2>Mid-Fidelity Wireframe (iOS)</h2>
+                        <picture>
+                            <img src="./img/Trekker/ios midfidelity@2x.png" alt="iOS Mid-Fidelity Wireframes">
+                        </picture>
+                    </section>
 
-                <!-- Skills and Tools Row -->
-                <div class="row">
-                    <div class="column col-md-6 col-lg-6">
-                        <h2>Skills</h2>
-                        <ul>
-                            <li>Visual Design</li>
-                            <li>Wireframing & Prototyping</li>
-                            <li>Style Guide Design</li>
-                            <li>Brand Architecture</li>
-                            <li>User Flows</li>
-                            <li>Competitive Analysis</li>
-                            <li>Case Study Presentation</li>
-                            <li>Usability Testing</li>
-                            <li>Graphic Design</li>
-                            <li>HTML & CSS</li>
-                        </ul>
-                    </div>
-                    <div class="column col-md-6 col-lg-6">
-                        <h2>Tools</h2>
-                        <ul>
-                            <li>Figma</li>
-                            <li>Adobe Suite (InDesign, Photoshop, Illustrator, After Effects)</li>
-                            <li>Keynote</li>
-                            <li>Pages</li>
-                            <li>Visual Studio Code</li>
-                            <li>GitHub</li>
-                        </ul>
-                    </div>
+                    <section>
+                        <h2>Mid Fidelity Wireframes (Android)</h2>
+                        <picture>
+                            <img src="./img/Trekker/android midfidelity@2x.png" alt="Android Mid-Fidelity Wireframes">
+                        </picture>
+                    </section>
+
+                    <section>
+                        <h2>Device Mockups</h2>
+                            <picture>
+                                <img src="./img/Trekker/mockups mobile@2x.png" alt="Device Mockup">
+                            </picture>
+                       
+                            <picture class="mobile mockup">
+                                <img src="./img/Trekker/mountain@2x.jpg" alt="Mobile App Mockup Mountain">
+                            </picture>
+                            <picture class="mobile mockup2">
+                                <img src="./img/Trekker/phonehand@2x.jpg"
+                                    alt="Mobile Handheld">
+                            </picture>
+                    </section>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
+
     <!--End of Main Container-->
 
 
@@ -158,8 +183,7 @@
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
     <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top"></button>
 </body>
