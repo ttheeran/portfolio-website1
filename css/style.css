@@ -8,7 +8,7 @@
    ============================================
    Primary Background (Dark Gray): #111827
    Secondary (White): #FFFFFF
-   Global Accent (Cyan): #06B6D4
+   Global Accent: #061b62
    Header Background: #0d131f
    Body Background: #070b16
    Border Accent: #061b62
@@ -310,12 +310,12 @@ main ul li {
 .button {
     transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
     display: inline-block;
-    background-color: #0891b2;
+    background-color: #061B62;
     color: #ffffff;
     font-weight: 400;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid #0e7490;
+    border-bottom: 2px solid #061e6d;
     transition: 0.2s opacity;
 }
 
